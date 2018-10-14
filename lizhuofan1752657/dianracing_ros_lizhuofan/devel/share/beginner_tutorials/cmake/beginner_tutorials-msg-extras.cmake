@@ -1,0 +1,2 @@
+set(beginner_tutorials_MESSAGE_FILES "/home/felix/dianracing_driverless_recruiting/lizhuofan1752657/dianracing_ros_lizhuofan/src/beginner_tutorials/msg/Num.msg")
+set(beginner_tutorials_SERVICE_FILES "/home/felix/dianracing_driverless_recruiting/lizhuofan1752657/dianracing_ros_lizhuofan/src/beginner_tutorials/srv/Fun_xyz.srv")

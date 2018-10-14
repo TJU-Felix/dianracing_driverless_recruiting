@@ -1,0 +1,2 @@
+beginner_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/felix/dianracing_driverless_recruiting/lizhuofan1752657/dianracing_ros_lizhuofan/devel -DCMAKE_INSTALL_PREFIX=/home/felix/dianracing_driverless_recruiting/lizhuofan1752657/dianracing_ros_lizhuofan/install -G Unix Makefiles

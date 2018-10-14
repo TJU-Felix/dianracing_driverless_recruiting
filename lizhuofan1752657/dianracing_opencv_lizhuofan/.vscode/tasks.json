@@ -1,0 +1,44 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+           {
+            "label": "g++",
+            "type": "shell",
+            "command": "g++",
+            "args": [     "-g",  "${file}",  "-o",  "${file}.o",//这里添加动态链接库
+                        "-I","/home/felix/opencv/opencv-3.4.3/include",
+                        "-I","/home/felix/opencv/opencv-3.4.3/include/opencv",
+                        "-I","/home/felix/opencv/opencv-3.4.3/include/opencv2",
+                        //"-L", "D:/opencv/build/x64/mingw/lib",
+                        "-L","/home/felix/opencv/opencv-3.4.3/build/lib",
+                        "-l", "opencv_core",
+                        "-l", "opencv_imgproc",
+                        "-l", "opencv_video",
+                        "-l", "opencv_ml",
+                        "-l", "opencv_highgui",
+                        "-l", "opencv_objdetect",
+                        "-l", "opencv_flann",
+                        "-l", "opencv_imgcodecs",
+                        "-l", "opencv_photo",
+                        "-l", "opencv_videoio"
+                ],
+            "problemMatcher": {    
+                "owner": "cpp",      
+                "fileLocation": [      
+                    "relative",      
+                    "${workspaceRoot}"      
+                ],      
+                "pattern": {      
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",      
+                    "file": 1,      
+                    "line": 2,      
+                    "column": 3,      
+                    "severity": 4,      
+                    "message": 5      
+                }      
+            } 
+        }
+    ]
+}
